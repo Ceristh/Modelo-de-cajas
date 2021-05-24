@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BarberShop</title>
+    <title>Desafio2</title>
     <meta name="author" content="Cristopher Munoz">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,11 +12,41 @@
     <!-- fontAwesome -->
     <script src="https://kit.fontawesome.com/ee5b3e7aa4.js" crossorigin="anonymous"></script>
     <!-- mi Css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .square {
+            height: 200px;
+            width: 200px;
+        }
+
+        .square__red {
+            background-color: rgba(255, 0 , 0, .5);
+        }
+
+        .square__green {
+            background-color: rgba(0, 255, 0, .5);
+            left: 25px;
+            top: 25px;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .square__blue {
+            background-color: rgba(0, 0, 255, .5);
+            left: 50px;
+            top: 50px;
+            position: absolute;
+            z-index: -2;
+        }
+    </style>
 </head>
 <body>
-
-
-    
+    <section class="square square__red"></section>
+    <section class="square square__green"></section>
+    <section class="square square__blue"></section>
 </body>
 </html>
